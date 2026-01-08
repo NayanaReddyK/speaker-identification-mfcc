@@ -66,7 +66,6 @@ The goal is to identify the speaker of a given audio sample based on acoustic ch
 ---
 ## Key Takeaway
 - For structured speech datasets with limited variability, strong feature engineering combined with classical machine learning can outperform more complex deep learning architectures.
-
 ---
 ## Tools & Libraries
 - Python
