@@ -58,13 +58,16 @@ The goal is to identify the speaker of a given audio sample based on acoustic ch
 ---
 
 ## Key Findings
-- Tuned **SVM with RBF kernel achieved the best performance**
-- Deep learning models did not outperform classical ML due to the small and structured nature of the dataset
-- Increasing model complexity does not necessarily improve performance when data is limited
-- Model choice should align with dataset characteristics rather than architectural complexity
+- A tuned Support Vector Machine (RBF kernel) achieved the best overall performance (99.18% accuracy), outperforming both baseline and tuned deep learning models.
+- Deep learning models benefited from architectural improvements (batch normalization, dropout, increased depth), but did not surpass classical ML on this dataset.
+- The CNN–LSTM model underperformed due to the short duration and limited temporal variability of the speech samples, where explicit temporal modeling provided minimal benefit.
+- Results highlight that increased model complexity does not necessarily improve performance when data is small, structured, and well-represented by engineered features.
 
 ---
+## Key Takeaway
+- For structured speech datasets with limited variability, strong feature engineering combined with classical machine learning can outperform more complex deep learning architectures.
 
+---
 ## Tools & Libraries
 - Python
 - librosa
